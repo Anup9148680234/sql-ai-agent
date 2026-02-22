@@ -193,15 +193,7 @@ export default function Chat() {
                         </div>
                       );
 
-                    case "step-start":
-                      return (
-                        <div
-                          key={`${message.id}-${i}`}
-                          className={`text-xs text-zinc-400 mt-2 ${part?.state === "step-start" ? "block" : "hidden"}`}
-                        >
-                          ⏳ Processing...
-                        </div>
-                      );
+                   
 
                     default:
                       return null;
